@@ -1,10 +1,15 @@
-This directory contains subdirectories for my project on a functional response dataset titled "Holling's disc equation outperforms quadratic and cubic linear models regardless of AIC cut-off threshold". In the Code subdirectory are all the Rscripts that will output results to the Results and Data subdirectories. To run the project and generate the report enter the following command in a linux terminal from the Code directory:
+# Introduction
+This directory contains subdirectories for a project titled "Holling's disc equation outperforms quadratic and cubic linear models regardless of AIC cut-off threshold". Given discourse in academic literature, I use an example dataset to examine the boundaries of reliability of Akaike and Schwarz Information Criterion for model selection.
 
-	bash compiler.sh
+# Repository Structure
+In the Code subdirectory are all the R scripts that will output results to the Results and Data subdirectories. To run the project and generate the report enter the following command in a linux terminal from the Code directory:
 
-I will now specify what each file of the Code and Data subdirectories do and what their dependencies are:
+`bash compiler.sh`
 
-Code:
+# Dependencies
+I specify what each file of the Code and Data subdirectories do and what their dependencies are.
+
+## Code
 - CompileLatex.sh - shell script that compiles a references latex file
 - compiler.sh - shell script to compile this project. Runs the analysis R scripts and makes directories to house their output. Uses the texcount Perl script to count the words in the report and then compiles the report pdf to store it in the Code subdirectory
 - data_prep.R - Rscript to subset the data amd output subset .csv's to Data/data_subsets
@@ -16,13 +21,16 @@ Code:
 - texcount.pl - Perl script to count the words in a Latex file
 - wordcount.txt - the compile.sh script makes the output of texcount.pl feed into this .txt file
 
-Data:
+## Data
 - BiotraitsTemplateDescription.pdf - a description of all the metadata fields in the dataset used for the project
 - CRat.csv - the dataset used for the project
 
+## General
 Languages and versions used:
 
-	R version 4.0.3
-	pdfTeX version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian)
-	Perl version v5.30.0
-	GNU bash version 5.0.17(1)
+```
+R version 4.0.3
+pdfTeX version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian)
+ version v5.30.0
+GNU bash version 5.0.17(1)
+```
