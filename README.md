@@ -6,10 +6,9 @@ In the Code subdirectory are all the R scripts that will output results to the R
 
 `bash compiler.sh`
 
-# Dependencies
 I specify what each file of the Code and Data subdirectories do and what their dependencies are.
 
-## Code
+## Code Dependencies
 - CompileLatex.sh - shell script that compiles a references latex file
 - compiler.sh - shell script to compile this project. Runs the analysis R scripts and makes directories to house their output. Uses the texcount Perl script to count the words in the report and then compiles the report pdf to store it in the Code subdirectory
 - data_prep.R - Rscript to subset the data amd output subset .csv's to Data/data_subsets
@@ -21,7 +20,7 @@ I specify what each file of the Code and Data subdirectories do and what their d
 - texcount.pl - Perl script to count the words in a Latex file
 - wordcount.txt - the compile.sh script makes the output of texcount.pl feed into this .txt file
 
-## Data
+## Data Dependencies
 - BiotraitsTemplateDescription.pdf - a description of all the metadata fields in the dataset used for the project
 - CRat.csv - the dataset used for the project
 
